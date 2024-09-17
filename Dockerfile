@@ -9,4 +9,4 @@ RUN dotnet restore "WebApp.csproj"
 RUN dotnet build "WebApp.csproj"
 RUN dotnet publish "WebApp.csproj"
 
-ENTRYPOINT ["WebApp.dll"]
+ENTRYPOINT ["dotnet", "bin/Release/net8.0/WebApp.dll"]
