@@ -15,7 +15,7 @@ COPY . ./
 RUN dotnet build
 
 # Собираем наше приложение в dll файл
-RUN dotnet publish -c Release -o out --sc false
+RUN dotnet publish -c Release -o out
 
 # Берем образ для запуска нашего приложения
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine
