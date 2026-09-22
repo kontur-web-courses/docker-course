@@ -21,5 +21,5 @@ RUN dotnet publish "WebApp/WebApp.csproj" -c Release -o /app/publish
 FROM first AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT [ "dotnet", "WebApp/WebApp.dll" ]
+ENTRYPOINT [ "dotnet", "WebApp.dll" ]
 
