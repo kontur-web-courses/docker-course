@@ -7,7 +7,7 @@ WORKDIR /src/WebApp
 
 RUN dotnet restore
 
-RUN dotnet build -c Releas
+RUN dotnet build -c Release
 
 RUN dotnet publish -c Release -o /app/publish
 
